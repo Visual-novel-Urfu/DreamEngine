@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapter2/scene11.rpy", line 70: expected 'label_name' not found.
-    jump (chosen_label)
-        ^
+File "game/chapter2/scene16.rpy", line 15: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    $ result = check_ending()
+    ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Dec 30 20:14:23 2024
+Mon Dec 30 20:38:02 2024

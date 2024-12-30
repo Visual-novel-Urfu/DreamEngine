@@ -1,19 +1,19 @@
-2024-12-30 15:24:52 UTC
+2024-12-30 15:42:17 UTC
 Linux-6.12.7-zen1-1-zen-x86_64-with-glibc2.40
 Ren'Py 8.3.4.24120703
 
-Early init took 0.07s
-Loading error handling took 0.02s
-Loading script took 0.13s
-Loading save slot metadata took 0.03s
+Early init took 0.14s
+Loading error handling took 0.05s
+Loading script took 0.33s
+Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
-Running init code took 0.04s
+Running init code took 0.05s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
+Reloading save slot metadata took 0.01s
 Index archives took 0.00s
 Backing up script files to '/home/axalotl/.renpy/backups/DreamEngine':
-Dump and make backups took 0.04s
+Dump and make backups took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.03s
@@ -29,7 +29,7 @@ Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.09s
+Interface start took 0.11s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1200)
@@ -41,3 +41,10 @@ Version: b'4.6 (Compatibility Profile) Mesa 24.3.2-cachyos1.2'
 Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(1272, 716) drawable=(1272, 716)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
