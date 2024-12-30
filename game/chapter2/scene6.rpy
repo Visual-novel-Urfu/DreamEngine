@@ -20,7 +20,7 @@ label scene6:
     show alexey surprise at center_right
     with moveinright
 
-    show igor home at left_to_right
+    show igor student at left_to_right
     with moveinleft
 
     i "Лёха, вставай, ну! Ты что, опять решил проспать? Пара через двадцать минут."

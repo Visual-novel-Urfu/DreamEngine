@@ -17,7 +17,7 @@ label scene2:
     scene bg street
     with fade
 
-    show alexey normal at center_right
+    show alexey street at center_right
     with moveinright
 
     "Алексей идёт по тёмной улице. Свет фонарей тусклый, машины проносятся мимо, прохожие торопятся по своим делам."

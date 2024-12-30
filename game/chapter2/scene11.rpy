@@ -21,7 +21,7 @@ label scene11:
     scene bg dormitory with fade
 
     show alexey dormitory at center_right
-    show igor home at left_to_right
+    show igor student at left_to_right
 
     i " Я в магазин, что-нибудь тебе взять?"
 
@@ -83,18 +83,21 @@ label alexey_got_drunk:
     "Алексей сильно напивается"
 
     show gleb normal at left_to_right
-    show alexey dormitory at center_right
+    with moveinleft
+
+    show alexey surprise at center_right
+    with moveinleft
 
     g "Ну, ты дал жару! Залпом два шота — я такого не ожидал."
 
     scene bg dormitory with fade
 
-    show alexey normal at center_right
+    show alexey surprise at center_right
     with moveinright
 
     a " Голова... завтра... пары..."
 
-    show igor home at left_to_right
+    show igor student at left_to_right
     with moveinleft
 
     i "Ну что, весело было?"
@@ -120,7 +123,7 @@ label alexey_got_little_drunk:
 
     a "Надо спать..."
 
-    show igor home at left_to_right
+    show igor student at left_to_right
     with moveinleft
 
     i "Что-то ты поздно вернулся."
@@ -144,7 +147,7 @@ label alexey_sober:
     show alexey normal at center_right
     with moveinright
 
-    show igor home at left_to_right
+    show igor student at left_to_right
     with moveinleft
 
     i "Доброе утро, ты сегодня рано встал."

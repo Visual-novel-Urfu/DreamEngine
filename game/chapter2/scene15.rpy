@@ -16,6 +16,7 @@ transform right_position:
     xalign 0.8
     yalign 1.1
     zoom 0.8
+    xzoom -1.0
 
 label scene15:
     scene black with fade
@@ -26,7 +27,7 @@ label scene15:
     scene bg dormitory with fade
 
     show alexey dormitory at right_position
-    show igor normal at center_position
+    show igor student at center_position
     show kristina normal at left_position
 
     a "Всё, ребята. Мы сделали это. Проект отправлен."

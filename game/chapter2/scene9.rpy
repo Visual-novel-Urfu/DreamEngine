@@ -20,7 +20,7 @@ label scene9:
     show alexey dormitory at center_right
     with moveinright
 
-    show igor home at left_to_right
+    show igor student at left_to_right
     with moveinleft
 
     i "Ну что, день закончился, а мы так и не решили, что делать с проектом."

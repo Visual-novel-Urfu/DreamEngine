@@ -16,6 +16,7 @@ transform right_position:
     xalign 0.8
     yalign 1.1
     zoom 0.8
+    xzoom -1.0
 
 label scene12:
     scene black with fade
@@ -51,7 +52,7 @@ label scene12:
     scene bg dormitory with fade
 
     show alexey dormitory at right_position
-    show igor home at center_position
+    show igor student at center_position
     show kristina normal at left_position
 
     i "Итак, у нас есть прототип сайта для управления учебными заданиями. Что сделано: я добавил возможность создавать списки заданий, задавать дедлайны и помечать их статус."

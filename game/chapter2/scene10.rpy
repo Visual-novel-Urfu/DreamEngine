@@ -16,6 +16,7 @@ transform right_position:
     xalign 0.8
     yalign 1.1
     zoom 0.8
+    xzoom -1.0
 
 label scene10:
 
@@ -34,7 +35,7 @@ label scene10:
     scene bg dormitory with fade
 
     show alexey dormitory at right_position
-    show igor home at center_position
+    show igor student at center_position
 
     a "Думаешь, Кристина точно придёт?"
 

@@ -19,10 +19,10 @@ label scene4:
     scene bg street
     with fade
 
-    show alexey normal at center_right
+    show alexey street at center_right
     with moveinright
 
-    show igor home at left_to_right
+    show igor normal at left_to_right
     with moveinleft
 
     i "Ладно, Лёха, я побегу. Но ты не теряйся. Если что, пиши – номер у тебя ведь остался?"

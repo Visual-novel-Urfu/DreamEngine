@@ -45,20 +45,20 @@ screen characteristics():
         ] align (0.5, 0.9)
 
 label start:
-    call scene1 from _call_scene1
-    call scene2 from _call_scene2
-    call scene3 from _call_scene3
-    call scene4 from _call_scene4
-    call scene5 from _call_scene5
-    call scene6 from _call_scene6
-    call scene7 from _call_scene7
-    call scene8 from _call_scene8
-    call scene9 from _call_scene9
-    call scene10 from _call_scene10
-    call scene11 from _call_scene11
-    call scene12 from _call_scene12
-    call scene13 from _call_scene13
-    call scene14 from _call_scene14
-    call scene15 from _call_scene15
-    call scene16 from _call_scene16
+    call scene1
+    call scene2
+    call scene3
+    call scene4
+    call scene5
+    call scene6
+    call scene7
+    call scene8
+    call scene9
+    call scene10
+    call scene11
+    call scene12
+    call scene13
+    call scene14
+    call scene15
+    call scene16
     return

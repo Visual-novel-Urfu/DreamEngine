@@ -16,7 +16,7 @@ transform left_to_right:
 label scene14:
     scene bg dormitory with fade
 
-    show alexey normal at center_right
+    show alexey dormitory at center_right
     with None
     show gleb normal at left_to_right
     with moveinleft
@@ -38,7 +38,7 @@ label scene14:
     hide gleb
     with dissolve
 
-    show igor home at left_to_right
+    show igor student at left_to_right
     with moveinleft
 
     i "С кем ты тут разговаривал?"
@@ -46,6 +46,8 @@ label scene14:
     a "С Глебом. Он опять звал меня на тусовку, но я отказался."
 
     i "Глеб? Кто это?"
+
+    show alexey surprise at center_right
 
     a "Ну как кто? Наш сосед. Он всегда тут тусуется."
 
@@ -57,10 +59,10 @@ label scene14:
 
     scene bg build with fade
 
-    show alexey dormitory at center_right
+    show alexey surprise at center_right
     with moveinright
 
-    show igor home at left_to_right
+    show igor student at left_to_right
     with moveinleft
 
     a "Этого не может быть. Я... я же видел его. Мы говорили."
@@ -70,6 +72,8 @@ label scene14:
     a "Но... Глеб... Он всегда появляется. Мы говорим."
 
     i "Ты уверен, что он существует? Может, это просто твоя усталость играет с тобой злую шутку?"
+
+    show alexey dormitory at center_right
 
     a "Может, ты прав..."
 

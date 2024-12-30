@@ -16,6 +16,7 @@ transform right_position:
     xalign 0.8
     yalign 1.1
     zoom 0.8
+    xzoom -1.0
 
 label scene13:
     scene black with fade
@@ -51,7 +52,7 @@ label scene13:
     scene bg dormitory with fade
 
     show alexey dormitory at right_position
-    show igor home at center_position
+    show igor student at center_position
     show kristina normal at left_position
 
     i "Ну что, хостим на каком-нибудь бесплатном сервере или арендуем что-то посерьёзнее?"
@@ -75,8 +76,8 @@ label scene13:
     scene bg black with fade
     scene bg dormitory with fade
 
-    show alexey normal at right_position
-    show igor home at center_position
+    show alexey dormitory at right_position
+    show igor student at center_position
     show kristina normal at left_position
 
     a "Всё, сервер работает. Вот адрес: taskmanager.edu. Попробуйте зайти."
