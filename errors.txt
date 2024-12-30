@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 38: expected '=' not found.
+    define config.overlay_functions.append(lambda: Show("variable_menu"))
+                                          ^
+
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Mon Dec 30 13:40:46 2024
