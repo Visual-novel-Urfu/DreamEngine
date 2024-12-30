@@ -57,7 +57,7 @@ label scene14:
 
     scene bg build with fade
 
-    show alexey normal at center_right
+    show alexey dormitory at center_right
     with moveinright
 
     show igor home at left_to_right

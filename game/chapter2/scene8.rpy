@@ -18,7 +18,7 @@ label scene8:
     show alexandr normal at left_to_right
     with None
 
-    show alexey normal at center_right
+    show alexey student at center_right
     with moveinright
 
     ac "Алексей, останьтесь на минуту."

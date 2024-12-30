@@ -18,9 +18,14 @@ transform right_position:
     zoom 0.8
 
 label scene15:
+    scene black with fade
+    show text Text("Воскресенье", color="#FFFFFF", size=30, xalign=0.5, yalign=0.5)
+    pause 2.0
+    hide text with fade
+
     scene bg dormitory with fade
 
-    show alexey normal at right_position
+    show alexey dormitory at right_position
     show igor normal at center_position
     show kristina normal at left_position
 

@@ -18,9 +18,39 @@ transform right_position:
     zoom 0.8
 
 label scene12:
+    scene black with fade
+    show text Text("Среда", color="#FFFFFF", size=30, xalign=0.5, yalign=0.5)
+    pause 2.0
+    hide text with fade
+
+    call screen characteristics
+    with fade
+
+    $ points = 10
+    $ fatigue = fatigue - 4
+
+    scene bg classroom with fade
+
+    show alexandr normal at left_to_right
+    with moveinleft
+
+    "Среда прошла как обычно, ничего интересного"
+
+    scene black with fade
+    show text Text("Четверг", color="#FFFFFF", size=30, xalign=0.5, yalign=0.5)
+    pause 2.0
+    hide text with fade
+
+    call screen characteristics
+    with fade
+
+    $ points = 10
+    $ fatigue = fatigue + 4
+    $ fatigue_buffer = fatigue
+
     scene bg dormitory with fade
 
-    show alexey normal at right_position
+    show alexey dormitory at right_position
     show igor home at center_position
     show kristina normal at left_position
 

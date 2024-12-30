@@ -1,34 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 27, in script call
-    call scene8
-  File "game/chapter2/scene8.rpy", line 19, in script
-    show alexandr normal home at left_to_right
-Exception: Image 'alexandr normal' does not accept attributes 'home'.
+  File "game/script.rpy", line 58, in script call
+    call scene11
+  File "game/chapter2/scene11.rpy", line 73, in script
+    jump chosen_label
+ScriptError: could not find label 'chosen_label'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 27, in script call
-    call scene8
-  File "game/chapter2/scene8.rpy", line 19, in script
-    show alexandr normal home at left_to_right
-  File "/mnt/windows/renpy-8.3.4-sdk/renpy/ast.py", line 1117, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "/mnt/windows/renpy-8.3.4-sdk/renpy/ast.py", line 1080, in show_imspec
-    renpy.config.show(name,
-  File "/mnt/windows/renpy-8.3.4-sdk/renpy/exports/displayexports.py", line 477, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "/mnt/windows/renpy-8.3.4-sdk/renpy/display/image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "/mnt/windows/renpy-8.3.4-sdk/renpy/display/displayable.py", line 249, in _duplicate
-    args.extraneous()
-  File "/mnt/windows/renpy-8.3.4-sdk/renpy/display/displayable.py", line 109, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'alexandr normal' does not accept attributes 'home'.
+  File "game/script.rpy", line 58, in script call
+    call scene11
+  File "game/chapter2/scene11.rpy", line 73, in script
+    jump chosen_label
+  File "/mnt/windows/renpy-8.3.4-sdk/renpy/ast.py", line 1705, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/mnt/windows/renpy-8.3.4-sdk/renpy/script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'chosen_label'.
 
 Linux-6.12.7-zen1-1-zen-x86_64-with-glibc2.40 x86_64
 Ren'Py 8.3.4.24120703
 DreamEngine 1.0
-Mon Dec 30 17:35:47 2024
+Mon Dec 30 20:16:24 2024

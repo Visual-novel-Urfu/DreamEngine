@@ -5,25 +5,25 @@ define ai = Character('Алексей (внутренний монолог)', co
 transform center_right:
     xalign 0.75
     yalign 1.1
-    zoom 0.75
+    zoom 1.0
     xzoom -1.0
 
 transform left_to_right:
     xalign 0.2
     zoom 0.8
-    yalign 1.1
+    yalign 1.2
 
 label scene6:
 
     scene bg dormitory with fade
 
-    show alexey normal at center_right
+    show alexey surprise at center_right
     with moveinright
-
-    i "Лёха, вставай, ну! Ты что, опять решил проспать? Пара через двадцать минут."
 
     show igor home at left_to_right
     with moveinleft
+
+    i "Лёха, вставай, ну! Ты что, опять решил проспать? Пара через двадцать минут."
 
     a "Игорь?!"
 
@@ -46,5 +46,15 @@ label scene6:
     a "Погнали, чего мы ждём!"
 
     scene black with fade
+    show text Text("Понедельник", color="#FFFFFF", size=30, xalign=0.5, yalign=0.5)
+    pause 2.0
+    hide text with fade
+
+    call screen characteristics
+    with fade
+
+    $ points = 10
+    $ fatigue = fatigue + 4
+    $ fatigue_buffer = fatigue
     return
 

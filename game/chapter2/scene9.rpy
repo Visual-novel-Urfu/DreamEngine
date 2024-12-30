@@ -17,7 +17,7 @@ label scene9:
 
     scene bg dormitory with fade
 
-    show alexey normal at center_right
+    show alexey dormitory at center_right
     with moveinright
 
     show igor home at left_to_right

@@ -13,11 +13,14 @@ transform left_to_right:
     zoom 0.8
     yalign 1.1
 
+init python:
+    import random
+
 label scene11:
 
     scene bg dormitory with fade
 
-    show alexey normal at center_right
+    show alexey dormitory at center_right
     show igor home at left_to_right
 
     i " Я в магазин, что-нибудь тебе взять?"
@@ -65,7 +68,91 @@ label party_with_gleb:
     scene bg club
     with fade
 
-    # случай
+    $ labels = ["alexey_got_drunk", "alexey_got_little_drunk", "alexey_sober"]
+    $ chosen_label = random.choice(labels)
+
+    if chosen_label == "alexey_got_drunk":
+        jump alexey_got_drunk
+    elif chosen_label == "alexey_got_little_drunk":
+        jump alexey_got_little_drunk
+    else:
+        jump alexey_sober
+
+label alexey_got_drunk:
+
+    "Алексей сильно напивается"
+
+    show gleb normal at left_to_right
+    show alexey dormitory at center_right
+
+    g "Ну, ты дал жару! Залпом два шота — я такого не ожидал."
+
+    scene bg dormitory with fade
+
+    show alexey normal at center_right
+    with moveinright
+
+    a " Голова... завтра... пары..."
+
+    show igor home at left_to_right
+    with moveinleft
+
+    i "Ну что, весело было?"
+
+    a "Убей меня..."
+
+    $ fatigue = fatigue + 20
+    $ fatigue_buffer = fatigue
+
+    scene bg black
+    with fade
+
+    return
+
+label alexey_got_little_drunk:
+
+    "Алексей слегка выпивает"
+
+    scene bg dormitory with fade
+
+    show alexey normal at center_right
+    with moveinright
+
+    a "Надо спать..."
+
+    show igor home at left_to_right
+    with moveinleft
+
+    i "Что-то ты поздно вернулся."
+
+    a "Нормально, отдохнул немного."
+
+    scene bg black
+    with fade
+
+    $ fatigue = fatigue + 4
+    $ fatigue_buffer = fatigue
+
+    return
+
+label alexey_sober:
+
+    "Поздний вечер. Алексей возвращается в общежитие спокойно, не чувствуя особой усталости. Глеб проводил его до входа и пошёл дальше, Алексей сразу лёг спать."
+
+    scene bg dormitory with fade
+
+    show alexey normal at center_right
+    with moveinright
+
+    show igor home at left_to_right
+    with moveinleft
+
+    i "Доброе утро, ты сегодня рано встал."
+
+    a "Доброе, да как обычно."
+
+    scene bg black
+    with fade
 
     return
 
