@@ -45,11 +45,14 @@ screen characteristics():
         ] align (0.5, 0.9)
 
 label start:
+    play music "minecraft.ogg"
     call scene1 from _call_scene1
     call scene2 from _call_scene2
     call scene3 from _call_scene3
     call scene4 from _call_scene4
     call scene5 from _call_scene5
+    stop music
+    play music "star_rail.ogg"
     call scene6 from _call_scene6
     call scene7 from _call_scene7
     call scene8 from _call_scene8
@@ -61,4 +64,5 @@ label start:
     call scene14 from _call_scene14
     call scene15 from _call_scene15
     call scene16 from _call_scene16
+    call scene17 from _call_scene17
     return
