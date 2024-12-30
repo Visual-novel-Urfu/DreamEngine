@@ -2,23 +2,27 @@ define a = Character('Алексей', color="#0e819e")
 define i = Character('Игорь', color="#ff1900")
 define k = Character('Кристина', color="#1e90ff")
 
-transform center_right:
-    xalign 0.75
-    yalign 1.1
-    zoom 0.75
-    xzoom -1.0
-
-transform left_to_right:
+transform left_position:
     xalign 0.2
-    zoom 0.8
     yalign 1.1
+    zoom 0.8
+
+transform center_position:
+    xalign 0.5
+    yalign 1.1
+    zoom 0.8
+
+transform right_position:
+    xalign 0.8
+    yalign 1.1
+    zoom 0.8
 
 label scene13:
     scene bg dormitory with fade
 
-    show alexey normal at center_right
-    show igor home at left_to_right
-    show kristina home at left_to_right
+    show alexey normal at right_position
+    show igor home at center_position
+    show kristina normal at left_position
 
     i "Ну что, хостим на каком-нибудь бесплатном сервере или арендуем что-то посерьёзнее?"
 
@@ -41,6 +45,10 @@ label scene13:
     scene bg black with fade
     scene bg dormitory with fade
 
+    show alexey normal at right_position
+    show igor home at center_position
+    show kristina normal at left_position
+
     a "Всё, сервер работает. Вот адрес: taskmanager.edu. Попробуйте зайти."
 
     k "Выглядит идеально. Осталось только убедиться, что ничего не сломается завтра."
@@ -50,6 +58,12 @@ label scene13:
     a "Ну что, ребята, мы готовы. Завтра покажем, на что способны."
 
     k "Только, пожалуйста, выспитесь. Мы должны быть в форме, если жюри захочет задать вопросы."
+
+    hide kristina
+    with dissolve
+
+    hide igor
+    with dissolve
 
     scene bg black
     with fade

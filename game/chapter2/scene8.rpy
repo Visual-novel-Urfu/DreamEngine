@@ -13,11 +13,10 @@ transform left_to_right:
     yalign 1.1
 
 label scene8:
-
     scene bg classroom with fade
 
-    show sylvester home at left_to_right
-    with moveinleft
+    show alexandr normal at left_to_right
+    with None
 
     show alexey normal at center_right
     with moveinright
@@ -35,6 +34,9 @@ label scene8:
     ac "С Игорем это хорошо. Очень умный человек. Советую вам сосредоточиться на практическом применении знаний."
 
     ac "Например, если вы делаете сайт, то подумайте, как можно адаптировать и оптимизировать ваш продукт для мобильных устройств. Это может быть очень полезно."
+
+    hide alexey
+    with dissolve
 
     scene bg black
     with fade

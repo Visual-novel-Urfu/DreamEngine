@@ -2,23 +2,27 @@ define a = Character('Алексей', color="#0e819e")
 define i = Character('Игорь', color="#ff1900")
 define k = Character('Кристина', color="#1e90ff")
 
-transform center_right:
-    xalign 0.75
-    yalign 1.1
-    zoom 0.75
-    xzoom -1.0
-
-transform left_to_right:
+transform left_position:
     xalign 0.2
-    zoom 0.8
     yalign 1.1
+    zoom 0.8
+
+transform center_position:
+    xalign 0.5
+    yalign 1.1
+    zoom 0.8
+
+transform right_position:
+    xalign 0.8
+    yalign 1.1
+    zoom 0.8
 
 label scene10:
 
     scene bg dormitory with fade
 
-    show alexey normal at center_right
-    show igor home at left_to_right
+    show alexey normal at right_position
+    show igor home at center_position
 
     a "Думаешь, Кристина точно придёт?"
 
@@ -30,7 +34,7 @@ label scene10:
 
     a "Красиво ты описал наш сайт."
 
-    # play sound "knock.ogg"  # Добавьте свой файл звука для стука в дверь
+    show kristina normal at left_position with moveinleft
 
     k "Привет! Надеюсь, я не рано?"
 

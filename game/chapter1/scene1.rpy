@@ -3,23 +3,23 @@ define a = Character('Алексей', color="#0e819e")
 define ai = Character('Алексей (внутренний монолог)', color="#0b5466")
 define m = Character('Мастер', color="#ff1900")
 
-transform center_left:
-    xalign 0.25
-    yalign 2.0
-    zoom 0.35
-
 transform center_right:
     xalign 0.75
     yalign 1.1
     zoom 0.75
     xzoom -1.0
 
+transform left_to_right:
+    xalign 0.2
+    zoom 0.8
+    yalign 1.1
+
 label scene1:
 
     scene bg factory
     with fade
 
-    show master normal at center_left
+    show master normal at left_to_right
     with moveinleft
 
     m "Алексей, подойди ко мне!"

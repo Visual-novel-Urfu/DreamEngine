@@ -2,7 +2,6 @@
 default project = 0
 default fatigue = 0
 
-# Функция отображения меню
 screen characteristics():
     frame:
         align (0.98, 0.02)

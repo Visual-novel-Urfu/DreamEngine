@@ -26,6 +26,12 @@ label scene11:
 
     i "Ладно, я быстро."
 
+    hide igor
+    with dissolve
+
+    show gleb normal at left_to_right
+    with moveinleft
+
     g "О, здорово, программист! Сидишь тут, значит?"
 
     a "Глеб, ты чего сюда зашёл?"
@@ -53,10 +59,15 @@ label party_with_gleb:
 
     g "Вот это другой разговор! Ну что, пошли?"
 
-    #прописать случаи
-
     scene bg black
     with fade
+
+    scene bg club
+    with fade
+
+    # случай
+
+    return
 
 label stay_in_room:
 
@@ -65,6 +76,9 @@ label stay_in_room:
     g "Ну, как знаешь. Потом не жалуйся, что ничего не происходит в жизни."
 
     g "Ладно, не буду отвлекать. Если передумаешь — звони."
+
+    hide gleb
+    with dissolve
 
     scene bg black
     with fade

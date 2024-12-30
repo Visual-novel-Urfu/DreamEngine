@@ -17,7 +17,9 @@ label scene14:
     scene bg dormitory with fade
 
     show alexey normal at center_right
-    show gleb normal at center_right
+    with None
+    show gleb normal at left_to_right
+    with moveinleft
 
     g "Здорово, трудяга! Снова за своим кодом?"
 
@@ -33,6 +35,12 @@ label scene14:
 
     g "Ну, смотри сам. Если передумаешь — знаешь, где меня найти."
 
+    hide gleb
+    with dissolve
+
+    show igor home at left_to_right
+    with moveinleft
+
     i "С кем ты тут разговаривал?"
 
     a "С Глебом. Он опять звал меня на тусовку, но я отказался."
@@ -46,6 +54,14 @@ label scene14:
     a "Нет, подожди. Я же с ним говорил. Он был тут, минуту назад."
 
     i "Ладно, пойдём проверим."
+
+    scene bg build with fade
+
+    show alexey normal at center_right
+    with moveinright
+
+    show igor home at left_to_right
+    with moveinleft
 
     a "Этого не может быть. Я... я же видел его. Мы говорили."
 
