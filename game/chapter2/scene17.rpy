@@ -3,7 +3,7 @@ label scene17:
 
     $ delay = 2.5
 
-    show text "Тимлид и менеджер по туалетам\nШуклин Александр" with dissolve
+    show text "Тимлид и менеджер по туалетам в jgroup.top\nШуклин Александр" with dissolve
     $ renpy.pause(delay)
     hide text
 
