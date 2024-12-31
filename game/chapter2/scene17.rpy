@@ -1,7 +1,7 @@
 label scene17:
     scene black with fade
 
-    $ delay = 2.5
+    $ delay = 4.5
 
     show text "Тимлид и менеджер по туалетам в jgroup.top\nШуклин Александр" with dissolve
     $ renpy.pause(delay)

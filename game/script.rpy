@@ -64,5 +64,7 @@ label start:
     call scene14 from _call_scene14
     call scene15 from _call_scene15
     call scene16 from _call_scene16
+    stop music
+    play music "final.ogg"
     call scene17 from _call_scene17
     return
